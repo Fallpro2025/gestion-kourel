@@ -18,6 +18,11 @@ Route::get('/', function () {
     return view('dashboard-modern');
 })->name('home');
 
+// Route Dashboard (temporairement désactivée)
+Route::get('/dashboard', function () {
+    return view('dashboard-modern');
+})->name('dashboard');
+
 // Route Gestion des Membres
 Route::get('/membres', function () {
     return view('membres.membres');

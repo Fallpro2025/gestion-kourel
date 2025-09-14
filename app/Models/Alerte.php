@@ -228,7 +228,7 @@ class Alerte extends Model
             'absence_non_justifiee' => "Absence non justifiée - {$membre}",
             'retard_excessif' => "Retards excessifs - {$membre}",
             'cotisation_retard' => "Cotisation en retard - {$membre}",
-            'evenement_majeur' => "Événement majeur - {$this->evenement?->nom ?? 'Événement'}",
+            'evenement_majeur' => "Événement majeur - " . ($this->evenement?->nom ?? 'Événement'),
             default => "Alerte - {$membre}"
         };
     }
