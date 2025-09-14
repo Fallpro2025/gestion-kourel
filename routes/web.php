@@ -20,27 +20,27 @@ Route::get('/', function () {
 
 // Route Gestion des Membres
 Route::get('/membres', function () {
-    return view('membres');
+    return view('membres.membres');
 })->name('membres');
 
 // Route Gestion des Cotisations
 Route::get('/cotisations', function () {
-    return view('cotisations');
+    return view('cotisations.cotisations');
 })->name('cotisations');
 
 // Route Gestion des Activités
 Route::get('/activites', function () {
-    return view('activites');
+    return view('activites.activites');
 })->name('activites');
 
 // Route Gestion des Événements
 Route::get('/evenements', function () {
-    return view('evenements');
+    return view('evenements.evenements');
 })->name('evenements');
 
 // Route Gestion des Alertes
 Route::get('/alertes', function () {
-    return view('alertes');
+    return view('alertes.alertes');
 })->name('alertes');
 
 // Route de test pour vérifier que Laravel fonctionne
